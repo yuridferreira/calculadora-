@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import { Calculator as CalculatorIcon } from 'lucide-react';
+import Calculator from './main/Calculator';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="app-shell">
+        <div className="app-title">
+          <CalculatorIcon size={24} color="#2563eb" />
+          <span>Calculadora</span>
+        </div>
+        <Calculator />
+      </div>
     </div>
   );
 }
